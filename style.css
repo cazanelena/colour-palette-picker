@@ -1,26 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Sigmar&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Sigmar', cursive;
+}
+
 h1 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    font-size: 50px;
+   
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 p {
     color: rgb(116, 113, 113);
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 button {
     width: fit-content;
     text-align: center;
     font-size: 15px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: white;
     color: black;
     border: 2px solid rgb(213, 203, 203);
@@ -31,4 +44,30 @@ button {
 button:hover {
     background-color: rgb(213, 203, 203);
     color: white;
+}
+
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.box {
+    min-width: 20rem;
+    height: 20rem;
+    background-color: aqua;
+    margin: 20px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 5px 10px #888888;
+}
+
+.hex-color {
+    display: block;
+    margin: 40% auto 0 auto;
+    font-size: 30px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
 }
