@@ -71,3 +71,11 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
 }
+.download {
+    background-color: white;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}

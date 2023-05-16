@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Pallet Picker</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
-    <h1>Color Pallet Picker</h1>
+    <h1 id="title">Color Pallet Picker</h1>
     <div class="row">
         <p>Press the spacebar to generate color palletes!</p>
-        <p>Cick the button to generate a new color!</p>
-    </div>
+        <p>Cick the button to copy the color!</p>
+        <button class="download"><a id="download" download="file.txt">Download colors file</a>
+        </div></button>
     
     <div class="stack">
         <div class="box" id="1">
@@ -54,6 +55,6 @@
        
     </div>
 
-    <script src="index.js"></script>
+    <script src="/src/index.js"></script>
 </body>
 </html>
