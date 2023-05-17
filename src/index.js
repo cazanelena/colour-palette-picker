@@ -1,73 +1,10 @@
-/*function getHex() {
-  let colorHex = "#";
-  const symbols = "0123456789ABCDEF";
-
-  for (let i = 0; i < 6; i++) {
-    colorHex = colorHex + symbols[Math.floor(Math.random() * 16)];
-  }
-
-  return colorHex;
-}
-
-function changeColors() {
-  const boxes = document.querySelectorAll(".box");
-  const hexValue = document.querySelectorAll(".hex-color");
-
-  for (let i = 0; i < boxes.length; i++) {
-    let color = getHex();
-    hexValue[i].innerHTML = color;
-    boxes[i].style.background = color;
-  }
-}
-changeColors();
-
-document.addEventListener("click", (e) => {
-  if (e.target.className == "hex-color") {
-    let id = e.target.parentElement.id;
-    const boxClicked = document.getElementById(id);
-    let newColor = getHex();
-    boxClicked.style.background = newColor;
-
-    const buttonClicked = boxClicked.firstElementChild;
-    buttonClicked.innerHTML = newColor;
-  }
-});
-*/
-
-// Working on the Optional features
-
-// Create a funtion that generate colors for each box
-
-/*
-function complimentaryColors() {
-  const boxes = document.querySelectorAll(".box");
-  const hexValue = document.querySelectorAll(".hex-color");
-
-
-  let greenColor = "";
-  let blueColor = "";
-  let increase = 10;
-
-  for (let i = 0; i < boxes.length; i++) {
-    let redColor = Math.floor(Math.random() * 225)
-    greenColor = (10 + increase).toString();
-    blueColor = (10   + increase).toString();
-    let rgb = "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
-
-    boxes[i].style.background = rgb;
-    hexValue[i].innerHTML = rgb;
-    increase += 17;
-  }
-}
-*/
-
 function complimentaryColors() {
   const boxes = document.querySelectorAll(".box");
   const hexValue = document.querySelectorAll(".hex-color");
 
   let redColor = "";
   let greenColor = "";
-  greenColor  = Math.floor(Math.random() * 225).toString();
+  greenColor = Math.floor(Math.random() * 225).toString();
   let blueColor = greenColor;
   let increase = 20;
 
@@ -122,5 +59,3 @@ const getColorsData = () => {
 const download = document.getElementById("download");
 const blob = new Blob(getColorsData(), { type: "text/plain" });
 download.href = URL.createObjectURL(blob);
-
-
